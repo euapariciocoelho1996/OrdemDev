@@ -60,11 +60,6 @@ Aplicativo mobile para estudo prático de Algoritmos de Ordenação e fundamento
   - `google_fonts`, `flutter_svg`, `flutter_animate`, `confetti`
   - `shared_preferences`, `audioplayers`, `image_picker`, `image_cropper`, `connectivity_plus`, `url_launcher`, `http`, `vibration`
 
-- **Fluxo de dados**
-  - Autenticação: Firebase Auth (e-mail/senha).
-  - Persistência: progresso e pontos no Firestore; preferências locais com `SharedPreferences`.
-  - Leitura em tempo real de comentários via streams do Firestore.
-
 - **Integração com backend (Firebase)**
   - Firestore como banco de dados de documentos.
   - Storage para arquivos de imagem de perfil.
