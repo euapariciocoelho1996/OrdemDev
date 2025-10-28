@@ -85,70 +85,26 @@ Aplicativo mobile para estudo prático de Algoritmos de Ordenação e fundamento
    - Debug APK: `flutter build apk --debug`
    - Release APK: `flutter build apk --release`
 
-### 1.7. Screenshots e demonstrações
-<p>Telas de Onboarding.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/on1.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/on2.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/on3.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/on4.jpg" width="150" />
-</p>
+### 1.6. Screenshots e demonstrações
+Telas de Onboarding
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/on1.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/on2.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/on3.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/on4.jpg" width="150" /> </p>
+Telas de Login / Criação de Conta / Home
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/login.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/criar-conta.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/home.jpg" width="200" /> </p>
+Telas de Conteúdo Introdutório + Algoritmos de Ordenação
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/introducao.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/conteudo-introducao.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/conteudo-ord.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/conteudo-orde-estudo.jpg" width="150" /> </p>
+Telas de Níveis e Quizzes
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/niveis-introducao.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/niveis-orde-pontos.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/quizz.jpg" width="200" /> </p>
+Telas de Feedback
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/feedback-acerto.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/feedback-erro.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/feedback-sem-vidas.jpg" width="150" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/nivel-completo.jpg" width="150" /> </p>
+Telas de Desafios / Ranking / Comentários
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/desafios.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/ranking.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/comentarios.jpg" width="200" /> </p>
+Telas de Guia de Estudos / Referências
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/guia.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/ref.jpg" width="200" /> </p>
+Telas de Internet / Perfil
+<p float="left"> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/informando-net.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/sem-internet.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/sem-internet-2.jpg" width="200" /> <img src="https://cdn.jsdelivr.net/gh/euapariciocoelho1996/OrdemDev@main/lib/OrdemDev-prints/OrdemDev/perfil.jpeg" width="200" /> </p>
 
 
-<p>Telas de Login / Criação de Conta / Home.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/login.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/criar-conta.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/home.jpg" width="200" />
-</p>
-
-<p>Telas de Conteúdo Introdutório + Tela de conteúdo principal (Algoritmos de Ordenação).</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/introducao.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/conteudo-introducao.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/conteudo-ord.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/conteudo-orde-estudo.jpg" width="150" />
-</p>
-<p>Telas de Níveis de introdução / Níveis principais com pontuação / Quizz.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/niveis-introducao.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/niveis-orde-pontos.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/quizz.jpg" width="200" />
-</p>
-<p>Telas de Feedback.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/feedback-acerto.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/feedback-erro.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/feedback-sem-vidas.jpg" width="150" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/nivel-completo.jpg" width="150" />
-</p>
-
-<p>Telas de novos desafios / Ranking / Sessão de comentários.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/desafios.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/ranking.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/comentarios.jpg" width="200" />
-</p>
-<p>Telas de Guia de estudos / Tela de referências. </p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/guia.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/ref.jpg" width="200" />
-</p>
-<p>Telas de avisos caso o usuário esteja sem internet / Perfil do usuário.</p>
-<p float="left">
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/informando-net.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/sem-internet.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/sem-internet-2.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/euapariciocoelho1996/OrdemDev/main/lib/OrdemDev-prints/OrdemDev/perfil.jpeg" width="200" />
-</p>
-
-
-
-
-
-
-
-### 1.8. Observações técnicas e decisões
+### 1.7. Observações técnicas e decisões
 - **Segurança Firebase (recomendado)**
   - Garanta que as regras não estejam abertas globalmente.
   - Defina políticas de leitura e escrita por usuário para coleções como `user_progress`, `user_points` e `user_profiles`, e modelagem adequada para `comentarios`.
@@ -158,7 +114,7 @@ Aplicativo mobile para estudo prático de Algoritmos de Ordenação e fundamento
   - Serviços dedicados para progresso e pontos para separar responsabilidades.
   - Widgets reutilizáveis para efeitos visuais e UX consistentes.
 
-### 1.9. Referências / Créditos
+### 1.8. Referências / Créditos
 - Bibliotecas: ver lista em `pubspec.yaml`.
 - Documentação Flutter: https://docs.flutter.dev
 - Firebase: https://firebase.google.com/docs
