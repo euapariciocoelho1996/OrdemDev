@@ -55,6 +55,7 @@ dependencies:
   http: ^1.1.0
   vibration: ^1.8.4
   flutter_staggered_animations: ^1.1.1
+  
 
   
   

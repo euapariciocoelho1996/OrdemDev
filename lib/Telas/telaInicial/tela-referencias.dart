@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:url_launcher/url_launcher.dart'; // ← IMPORTANTE
 
 import '../../Cores/app_colors.dart';
 import '../../appBar/app-bar.dart';
@@ -11,79 +12,47 @@ import 'package:OrdemDev/Telas/telaInicial/tela-inicial.dart';
 class StudyReferencesScreen extends StatelessWidget {
   const StudyReferencesScreen({Key? key}) : super(key: key);
 
-  // Lista de dados para os livros
+  // Função para abrir links
+  void _openLink(String url) async {
+    final Uri uri = Uri.parse(url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      throw "Não foi possível abrir o link $url";
+    }
+  }
+
   static const List<StudyReference> _books = [
     StudyReference(
       title: "The C Programming Language",
-      description: "Por Brian W. Kernighan e Dennis M. Ritchie (K&R). A bíblia do C.",
+      description: "Brian W. Kernighan e Dennis M. Ritchie.",
       icon: Icons.book,
+      link: "https://books.google.com.br/books?hl=pt-BR&lr=&id=OpJ_0zpF7jIC&oi=fnd&pg=PP11",
     ),
     StudyReference(
-      title: "C Primer Plus",
-      description: "Por Stephen Prata. Excelente para iniciantes com exemplos detalhados.",
-      icon: Icons.book_outlined,
-    ),
-    StudyReference(
-      title: "Head First C",
-      description: "Por David Griffiths & Dawn Griffiths. Uma abordagem visual e divertida.",
+      title: "C: Como Programar (6ª edição)",
+      description: "Paul Deitel & Harvey Deitel.",
       icon: Icons.menu_book,
+      link: "https://archive.org/details/c-como-programar-6ed-deitel",
+    ),
+    StudyReference(
+      title: "C: Completo e Total",
+      description: "Herbert Schildt.",
+      icon: Icons.book_outlined,
+      link: "https://d1wqtxts1xzle7.cloudfront.net/59132884/c_completo_e_total.pdf",
     ),
   ];
 
-  // Lista de dados para websites e tutoriais
   static const List<StudyReference> _websites = [
     StudyReference(
-      title: "Alura",
-      description: "Plataforma brasileira com cursos de tecnologia, incluindo a formação em C.",
-      icon: Icons.school,
-    ),
-    StudyReference(
-      title: "Digital Innovation One (DIO)",
-      description: "Plataforma com bootcamps e cursos gratuitos sobre C e outras tecnologias.",
-      icon: Icons.rocket_launch,
-    ),
-    StudyReference(
-      title: "Bóson Treinamentos",
-      description: "Site e canal com centenas de aulas gratuitas sobre C, hardware e redes.",
-      icon: Icons.desktop_windows,
-    ),
-    StudyReference(
       title: "GeeksforGeeks",
-      description: "Artigos detalhados, tutoriais e problemas de programação.",
+      description: "Tutoriais, exercícios e explicações detalhadas.",
       icon: Icons.public,
+      link: "https://www.geeksforgeeks.org/",
     ),
     StudyReference(
-      title: "TutorialsPoint",
-      description: "Um guia completo e direto sobre a linguagem C.",
+      title: "W3Schools",
+      description: "Introdução simples e direta à linguagem C.",
       icon: Icons.web,
-    ),
-  ];
-
-  // Lista de dados para canais no YouTube
-  static const List<StudyReference> _youtubeChannels = [
-    StudyReference(
-      title: "freeCodeCamp.org",
-      description: "Cursos completos em vídeo, incluindo um sobre a linguagem C.",
-      icon: Icons.smart_display,
-    ),
-    StudyReference(
-      title: "The Cherno",
-      description: "Vídeos de alta qualidade sobre C++ e conceitos aplicáveis a C.",
-      icon: Icons.play_circle_outline,
-    ),
-  ];
-
-  // Lista de dados para comunidades
-  static const List<StudyReference> _communities = [
-    StudyReference(
-      title: "Stack Overflow",
-      description: "A maior comunidade para tirar dúvidas de programação.",
-      icon: Icons.forum,
-    ),
-    StudyReference(
-      title: "r/C_Programming (Reddit)",
-      description: "Subreddit dedicado a discussões e ajuda sobre a linguagem C.",
-      icon: Icons.group,
+      link: "https://www.w3schools.com/c/",
     ),
   ];
 
@@ -100,7 +69,6 @@ class StudyReferencesScreen extends StatelessWidget {
               child: Column(
                 children: AnimationConfiguration.toStaggeredList(
                   duration: const Duration(milliseconds: 600),
-                  delay: const Duration(milliseconds: 100),
                   childAnimationBuilder: (widget) => SlideAnimation(
                     verticalOffset: 50.0,
                     child: FadeInAnimation(child: widget),
@@ -109,51 +77,19 @@ class StudyReferencesScreen extends StatelessWidget {
                 ),
               ),
             ),
+
             const SizedBox(height: 24),
 
-            _buildSectionTitle("Websites e Tutoriais"),
+            _buildSectionTitle("Websites"),
             AnimationLimiter(
               child: Column(
                 children: AnimationConfiguration.toStaggeredList(
                   duration: const Duration(milliseconds: 600),
-                  delay: const Duration(milliseconds: 100),
                   childAnimationBuilder: (widget) => SlideAnimation(
                     horizontalOffset: 50.0,
                     child: FadeInAnimation(child: widget),
                   ),
                   children: _buildReferenceList(_websites),
-                ),
-              ),
-            ),
-            const SizedBox(height: 24),
-
-            _buildSectionTitle("Canais no YouTube"),
-            AnimationLimiter(
-              child: Column(
-                children: AnimationConfiguration.toStaggeredList(
-                  duration: const Duration(milliseconds: 600),
-                  delay: const Duration(milliseconds: 100),
-                  childAnimationBuilder: (widget) => SlideAnimation(
-                    verticalOffset: 50.0,
-                    child: FadeInAnimation(child: widget),
-                  ),
-                  children: _buildReferenceList(_youtubeChannels),
-                ),
-              ),
-            ),
-            const SizedBox(height: 24),
-
-            _buildSectionTitle("Comunidades e Fóruns"),
-            AnimationLimiter(
-              child: Column(
-                children: AnimationConfiguration.toStaggeredList(
-                  duration: const Duration(milliseconds: 600),
-                  delay: const Duration(milliseconds: 100),
-                  childAnimationBuilder: (widget) => SlideAnimation(
-                    horizontalOffset: 50.0,
-                    child: FadeInAnimation(child: widget),
-                  ),
-                  children: _buildReferenceList(_communities),
                 ),
               ),
             ),
@@ -183,28 +119,27 @@ class StudyReferencesScreen extends StatelessWidget {
   }
 
   List<Widget> _buildReferenceList(List<StudyReference> references) {
-    return references
-        .map((ref) => Padding(
-              padding: const EdgeInsets.only(bottom: 8.0),
-              child: Card(
-                elevation: 2,
-                color: AppColors.primaryCard,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                child: ListTile(
-                  leading: Icon(ref.icon, color: AppColors.icon, size: 28),
-                  title: Text(
-                    ref.title,
-                    style: GoogleFonts.robotoMono(
-                        color: AppColors.textPrimary, fontWeight: FontWeight.w500),
-                  ),
-                  subtitle: Text(
-                    ref.description,
-                    style: GoogleFonts.robotoMono(color: AppColors.textSecondary),
-                  ),
-                ),
-              ),
-            ))
-        .toList();
+    return references.map((ref) {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 8.0),
+        child: InkWell(
+          onTap: () => _openLink(ref.link),
+          child: Card(
+            elevation: 2,
+            color: AppColors.primaryCard,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+            child: ListTile(
+              leading: Icon(ref.icon, color: AppColors.icon, size: 28),
+              title: Text(ref.title,
+                  style: GoogleFonts.robotoMono(
+                      color: AppColors.textPrimary, fontWeight: FontWeight.w500)),
+              subtitle: Text(ref.description,
+                  style: GoogleFonts.robotoMono(color: AppColors.textSecondary)),
+            ),
+          ),
+        ),
+      );
+    }).toList();
   }
 }
 
@@ -212,10 +147,12 @@ class StudyReference {
   final String title;
   final String description;
   final IconData icon;
+  final String link;
 
   const StudyReference({
     required this.title,
     required this.description,
     required this.icon,
+    required this.link,
   });
 }

@@ -28,12 +28,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       'color': AppColors.cardCyan,
     },
     {
-      'title': 'Aprenda na Prática',
-      'text': 'Teoria + prática = conhecimento real.',
-      'icon': Icons.computer,
-      'color': AppColors.cardTeal,
-    },
-    {
       'title': 'HORA DE COMEÇAR!',
       'text': 'Vamos lá, o próximo nível de habilidades te espera!',
       'icon': Icons.rocket_launch,
